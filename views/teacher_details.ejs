@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Semester selection </title>
+        <link rel="stylesheet" href="teacher_detail.css">
+</head>
+
+<body>
+        <h1> Welcome <%= name %>... </h1>
+        <div id="container">
+                <div id="box">
+                        
+                        <b>Teacher-id :</b> <%=Teacher_Id %>
+
+                </div>
+
+
+                <div id="box1">
+                        
+                        <b>Name :</b> <%=name %>
+
+                </div>
+                <div id="box3">
+                        <b>Contact :</b> <%=Phone_No %>
+                <div>
+
+<form class="form" action="http://localhost:5000/teacher_details/Attendence_form" method="POST">
+    <input type="hidden" name="Teacher_Id" value="<%= Teacher_Id %>">
+    <button type="submit">Take Attendance</button>
+</form>
+
+</div>

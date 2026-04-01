@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendence Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="Attendence-container">
+    <h1>Welcome <%=name%>!!</h1>
+    <h2>You are one step behind of taking attendence!!</h2>
+    <form class="login-form">
+        <div class="Attendence-form-group">
+        <label for="Batch">Batch: </label>
+        <Select name="Batch" id="Batch">
+            <% Batches.forEach(batch=>{ %>
+                <option value="<%= batch %>"><%= batch %></option>
+            <%})%>
+        </Select>
+        </div>
+
+        <div class="Attendence-form-group">
+        <label for="Course">Branch: </label>
+        <Select name="Course" id="Batch">
+            <% courses.forEach(Course=>{ %>
+                <option value="<%= Course %>"><%= Course %></option>
+            <%})%>
+        </Select>
+        </div>
+
+        <div class="Attendence-form-group">
+            <label for="section">Section: </label>
+            <Select name="section" id="section">
+                <% sections.forEach(section=>{ %>
+                    <option value="<%= section %>"><%= section %></option>
+                <%})%>
+            </Select>
+        </div>
+
+        <button type="submit" class="btn-primary">Student List</button>
+        
+    </form>
+
+    </div>
+</body>
+</html>

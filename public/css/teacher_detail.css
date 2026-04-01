@@ -1,0 +1,73 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* stack heading + container */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/image/iiit_image.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #2c3e50;
+}
+
+/* Heading */
+h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Main container */
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: rgba(255, 255, 255, 0.9); /* semi-transparent */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Individual info boxes */
+#box, #box1, #box2, #box3 {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #34495e;
+}
+
+/* Form and button */
+.form {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.form button {
+    background: linear-gradient(135deg, #6c5ce7, #341f97);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}

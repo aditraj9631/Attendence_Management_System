@@ -1,0 +1,154 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%); */
+    background: url("image/iiit_image.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+/* Container */
+.login-container {
+    text-align: center;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Headings */
+.login-container h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.login-container h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: #34495e;
+    margin-bottom: 2rem;
+}
+
+/* Form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+/* Labels and Inputs */
+.login-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    display: block;
+    margin-bottom: 0.3rem;
+    text-align: left;
+}
+
+.login-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-form input:focus {
+    border-color: #6c5ce7;
+}
+
+
+/* Forgot password link */
+.login-form a {
+    font-size: 0.9rem;
+    color: #6c5ce7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-form a:hover {
+    color: #341f97;
+}
+
+/* Button */
+.btn-primary {
+    background: linear-gradient(135deg, #6c5ce7, #341f97);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ---------------------------------Attendence form ---------------------------*/
+
+.Attendence-container {
+    text-align: center;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 800px;
+}
+
+.Attendence-form-group{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.Attendence-form-group label{              
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0;
+
+}
+.Attendence-form-group select {               
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0;
+}
+
+
+.Attendence-container h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.Attendence-container h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    color: #34495e;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
