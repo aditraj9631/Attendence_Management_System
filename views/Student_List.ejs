@@ -2,10 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Attendance Register</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <h1>Hello EveryOne</h1>
+
+<div class="container">
+    <h2> Attendance Register</h2>
+<!-- <form action="/" method="post"> -->
+    <div class="info">
+        <div> Teacher Name: <%= TeacherName %> </div>
+        <div> Batch: <%=Batch%> </div>
+        <div>Semester: <%=semester%></div>
+        <div> Section: <%=section%> </div>
+        <div> Attendance ID: 2 </div>
+        <div>Date: 
+        <input 
+            type="date" 
+            name="date" 
+            style="width: 250px;" 
+            value="<%= new Date().toISOString().split('T')[0] %>" 
+            max="<%= new Date().toISOString().split('T')[0] %>"
+        >
+    </div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Student Id</th>
+            <th>Roll No.</th>
+            <th>Name</th>
+            <th>Present ✔</th>
+            <th>Absent ✖</th>
+        </tr>
+        <% let i=0 %>
+        <% RollNos.forEach(RollNo=>{ %>
+            <tr>
+            <td><%=SId[i]%></td>
+            <td><%=RollNo%></td>
+            <td><%=Snames[i]%></td>
+            <% i++; %>
+
+            <td><input type="radio" name="<%=RollNo%>" value="present"></td>
+            <td><input type="radio" name="<%=RollNo %>" value="absent"></td>
+            </tr>  
+        <%})%>
+        <!-- <tr>
+            <td>1</td>
+            <td></td>
+            <td><input type="radio" name="student1" value="present"></td>
+            <td><input type="radio" name="student1" value="absent"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td><input type="radio" name="student2" value="present"></td>
+            <td><input type="radio" name="student2" value="absent"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td><input type="radio" name="student3" value="present"></td>
+            <td><input type="radio" name="student3" value="absent"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td><input type="radio" name="student4" value="present"></td>
+            <td><input type="radio" name="student4" value="absent"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td><input type="radio" name="student5" value="present"></td>
+            <td><input type="radio" name="student5" value="absent"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td></td>
+            <td><input type="radio" name="student6" value="present"></td>
+            <td><input type="radio" name="student6" value="absent"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td></td>
+            <td><input type="radio" name="student7" value="present"></td>
+            <td><input type="radio" name="student7" value="absent"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td></td>
+            <td><input type="radio" name="student8" value="present"></td>
+            <td><input type="radio" name="student8" value="absent"></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td></td>
+            <td><input type="radio" name="student9" value="present"></td>
+            <td><input type="radio" name="student9" value="absent"></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td></td>
+            <td><input type="radio" name="student10" value="present"></td>
+            <td><input type="radio" name="student10" value="absent"></td>
+        </tr> -->
+    </table>
+
+    <div class="summary">
+        <div> Total Students: ____</div>
+        <div><button type="submit" class="btn-primary">Submit</button></div>
+        <div>✅ Present: ____</div>
+        <div>❌ Absent: ____</div>
+
+    </div>
+</div>
+<!-- </form> -->
 </body>
 </html>

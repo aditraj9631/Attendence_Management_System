@@ -39,6 +39,8 @@ body {
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     color: #34495e;
     margin-bottom: 2rem;
+    animation: linear; 
+    -webkit-animation: linear;
 }
 
 /* Form */
@@ -149,6 +151,98 @@ body {
 }
 
 
+
+
+
+
+
+/* ------------------------------------------ Student List CSS ---------------------------- */
+
+/* body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 20px;
+} */
+
+.container {
+    background: #ffffff;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.info div {
+    background: #f1f9ff;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 5px solid #4facfe;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+th {
+    background: #4facfe;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #e6f7ff;
+}
+
+.present {
+    color: green;
+    font-weight: bold;
+}
+
+.absent {
+    color: red;
+    font-weight: bold;
+}
+
+.summary {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary div {
+    background: #f1f9ff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border-left: 5px solid #00c6ff;
+}
 
 
 

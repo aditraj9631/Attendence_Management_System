@@ -11,7 +11,7 @@
     <div class="Attendence-container">
     <h1>Welcome <%=name%>!!</h1>
     <h2>You are one step behind of taking attendence!!</h2>
-    <form class="login-form">
+    <form class="login-form" action="http://localhost:5000/teacher_details/Attendence_form/Student_List" method="POST">
         <div class="Attendence-form-group">
         <label for="Batch">Batch: </label>
         <Select name="Batch" id="Batch">
@@ -19,6 +19,7 @@
                 <option value="<%= batch %>"><%= batch %></option>
             <%})%>
         </Select>
+        <input type="hidden" name="Teacher_ID" value="<%=Teacher_ID %>" >
         </div>
 
         <div class="Attendence-form-group">
@@ -29,6 +30,14 @@
             <%})%>
         </Select>
         </div>
+        <div class="Attendence-form-group">
+            <label for="semester">Semester: </label>
+            <Select name="semester" id="semester">
+                <% semesters.forEach(semester=>{ %>
+                    <option value="<%= semester %>"><%= semester %></option>
+                <%})%>
+            </Select>
+            </div>
 
         <div class="Attendence-form-group">
             <label for="section">Section: </label>
